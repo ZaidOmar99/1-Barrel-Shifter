@@ -29,7 +29,7 @@ module param_left_shifter #(parameter N = 4) (
     always @(*) begin
         y = a; 
         for (i = 0; i < amt; i = i + 1) begin
-            y = {y[(2**N)-2:0],y[(2**N)-1]};  //gets second msb - lsb and puts them at the front and gets the msb and puts it in the back. Repeat until i > amt
+            y = {y[(2**N)-2:0],y[(2**N)-1]};  
         end
     end
 endmodule
